@@ -1,0 +1,45 @@
+.textfield {
+
+  input {
+    margin-bottom: 12px;
+    padding: 0.5rem 1rem;
+    transition: all 0.12s ease;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    background-color: #fff;
+    border: 1px solid #ffffff;
+    color: #383838;
+
+    &.default{
+      border: 1px solid #383838;
+    }
+
+    &.minimal {
+      border-bottom: 1px solid #383838;
+    }
+
+    &:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 0;
+      border: 1px dashed #383838;
+    }
+  }
+
+  .label {
+    display: block;
+    color: #383838;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .required {
+    color: #ff0000;
+    margin-left: 0.35rem;
+    font-size: 0.75rem;
+    font-weight: 200;
+  }
+}

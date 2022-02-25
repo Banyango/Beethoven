@@ -1,0 +1,57 @@
+@import "../../globalStyles/global.scss";
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 0.5rem 1rem;
+  transition: all 0.12s ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  background-color: #fff;
+  border: 1px solid #383838;
+  color: #383838;
+
+  &.simple {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #383838;
+  }
+
+  &:not(.disabled) {
+    &:hover {
+      &.default {
+        background-color: #383838;
+        border : 1px solid #383838;
+        color: #fff;
+      }
+
+      &.simple:before {
+        background-color: #ffffff;
+        border: 1px solid #ffffff;
+        color: #383838;
+        content: "+";
+        margin-right: 10px;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &.disabled {
+    @extend %disabled;
+  }
+
+  .icon {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    height: 1em;
+    width: 1em;
+  }
+}
+
+

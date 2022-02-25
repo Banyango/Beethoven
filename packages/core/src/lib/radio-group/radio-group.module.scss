@@ -1,0 +1,12 @@
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+
+  & > * {
+    margin-bottom: 7px;
+  }
+}
+
+.label::after {
+  padding-bottom: 10px;
+}

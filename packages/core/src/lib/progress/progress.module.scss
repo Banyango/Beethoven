@@ -1,0 +1,17 @@
+.progress_background {
+  border-bottom: 1px dashed #a8a8a8;
+  height: 2px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.progress_bar {
+  background-color: #383838;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: width 0.2s ease-in-out;
+}

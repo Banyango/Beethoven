@@ -1,0 +1,23 @@
+
+li {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .link {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+
+    &:hover {
+      border-bottom: 1px dashed #383838;
+    }
+
+    &.active {
+      border-bottom: 1px dashed #383838;
+    }
+  }
+}
+

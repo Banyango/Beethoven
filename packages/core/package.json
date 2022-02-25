@@ -1,0 +1,11 @@
+{
+  "name": "@beethoven/core",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap-icons": "^1.8.1",
+    "classnames": "^2.3.1"
+  },
+  "scripts": {
+    "storybook": "nx storybook core --verbose"
+  }
+}

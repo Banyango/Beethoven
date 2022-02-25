@@ -1,0 +1,48 @@
+@import "../../globalStyles/global.scss";
+
+.select {
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 0.25rem 1.5rem 0.25rem 0.5rem;
+    transition: all 0.12s ease;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    background-color: #fff;
+    border: 0;
+    border-bottom: 1px solid #383838;
+    color: #383838;
+
+    &:hover:not(:disabled) {
+      border-bottom: 1px dashed #383838;
+    }
+
+    &:disabled {
+      @extend %disabled;
+    }
+
+    &::-ms-expand {
+      // IE11 styling to hide the arrow
+      display: none;
+    }
+  }
+
+  .icon {
+    position: relative;
+    top: -5px;
+    right: 1.3rem;
+    pointer-events: none;
+
+    &.disabled {
+      color: #b3b3b3;
+    }
+  }
+}
+
