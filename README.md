@@ -33,7 +33,7 @@ Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
 
 Beethoven is using storybook to display the components in a kitchen sink.
 To generate a storybook story for a component, run the following command:
-`nx g @nrwl/react:stories core ```
+`nx g @nrwl/react:stories core `
 
 # Icons
 
