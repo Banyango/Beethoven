@@ -11,10 +11,10 @@ jobs:
         with:
           persist-credentials: false
       - name: Install and Build
-        run: | # Install npm packages and build storybook
-          npm install
-          find ./packages/* -maxdepth 1 -name package.json -exec npm install \;
-          npx nx build-storybook core
+        run:  # Install npm packages and build storybook
+          - find ./packages/* -maxdepth 1 -name package.json -exec npm install \;
+          - npm i
+          - npx nx build-storybook core
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
