@@ -9,5 +9,6 @@ export default {
 const Template: Story = (args) => <Checkbox label={'Primary'} value={''} name={''} checked={false} disabled={false}
                                             onChange={()=>{}} onFocus={()=>{}} onBlur={()=>{}} {...args} />;
 
+
 export const Primary = Template.bind({});
 Primary.args = {};
