@@ -10,6 +10,7 @@ export interface IButtonProps {
    */
   type: 'default' | 'simple' | 'danger' | 'warning';
 
+
   /**
    * True if the button is disabled; false otherwise.
    */
