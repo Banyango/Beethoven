@@ -13,7 +13,8 @@ jobs:
       - name: Install and Build
         run: | # Install npm packages and build storybook
           npm i
-          npm i packages/core
+          cd packages/core && npm i
+          cd -
           npx nx build-storybook core
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
