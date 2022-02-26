@@ -15,6 +15,7 @@ jobs:
           npm i
           cd packages/core && npm i
           cd -
+          npx nx build core
           npx nx build-storybook core
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
