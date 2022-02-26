@@ -12,7 +12,6 @@ export default {
   iconClassname: 'string',
 } as Meta;
 
-
 const Template: Story<IButtonProps> = (args) => {
   const [count, setCount] = useState(0);
   return <>
