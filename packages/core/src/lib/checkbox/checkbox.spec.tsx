@@ -8,3 +8,4 @@ describe('Checkbox', () => {
     expect(baseElement).toBeTruthy();
   });
 });
+
