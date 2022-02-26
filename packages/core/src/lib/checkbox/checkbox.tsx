@@ -3,6 +3,7 @@ import {ICheckboxProps} from "./checkbox.props.interface";
 
 import styles from './checkbox.module.scss';
 
+
 export const Checkbox: React.FC<ICheckboxProps> = ({checked, disabled, label, name, onBlur, onChange, onFocus, value}) => {
   const [isChecked, setIsChecked] = useState(checked);
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
