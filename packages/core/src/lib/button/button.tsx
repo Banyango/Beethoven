@@ -14,6 +14,7 @@ const types: Record<IButtonProps['type'], string> = {
   warning: styles.warning,
 };
 
+
 export const Button: React.FC<IButtonProps> = ({children, ariaDisabled, ariaDescribedBy, ariaLabel, iconClassname, onClick, type, label, disabled, className}) => {
   const buttonRef = useRef<HTMLButtonElement | null>(null);
   return (
