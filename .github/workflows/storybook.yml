@@ -15,14 +15,13 @@ jobs:
           npm i
           cd packages/core && npm i
           cd -
-          npx nx build core
-          npx nx build-storybook core
+          NODE_ENV=production npx nx build-storybook core
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: dist/ # The folder that the build-storybook script generates files.
+          FOLDER: dist/storybook/core # The folder that the build-storybook script generates files.
           CLEAN: true # Automatically remove deleted files from the deploy branch
           TARGET_FOLDER: docs # The folder that we serve our Storybook files from
 
