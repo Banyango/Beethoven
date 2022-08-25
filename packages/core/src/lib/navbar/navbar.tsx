@@ -1,11 +1,11 @@
-import React, {useRef} from "react";
+import React, {PropsWithChildren, useRef} from "react";
 import {INavbarProps} from "./navbar.props.interface";
 
 import styles from './navbar.module.scss';
 import classNames from "classnames";
 import {useClickOutside} from "../../hooks/use-click-outside.hook";
 
-export const Navbar: React.FC<INavbarProps> = props => {
+export const Navbar: React.FC<PropsWithChildren<INavbarProps>> = props => {
   return (
     <nav className={classNames(styles.navbar, props.style)}>
       <div className={styles.logo}>
@@ -20,7 +20,7 @@ export const Navbar: React.FC<INavbarProps> = props => {
   );
 }
 
-const NavBarCollapsed: React.FC<INavbarProps> = props => {
+const NavBarCollapsed: React.FC<PropsWithChildren<INavbarProps>> = props => {
   const [collapsed, setCollapsed] = React.useState(true);
   const className = collapsed ? "bi-three-dots" : "bi-arrow-down";
   const ref = useRef<HTMLUListElement>(null);

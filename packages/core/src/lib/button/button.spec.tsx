@@ -13,7 +13,7 @@ describe('Button', () => {
 
     const component = render(<Button {...props} type="default"/>);
 
-    let icon = component.getAllByTestId('icon');
+    const icon = component.getAllByTestId('icon');
 
     expect(icon.length).toBe(1);
   });
@@ -26,7 +26,7 @@ describe('Button', () => {
 
     const component = render(<Button {...props} type="default"/>);
 
-    let icon = component.queryByTestId('icon');
+    const icon = component.queryByTestId('icon');
 
     expect(icon).toBeNull()
   });

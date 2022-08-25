@@ -1,5 +1,5 @@
 import './button.module.scss';
-import React, {useRef} from "react";
+import React, {PropsWithChildren, useRef} from "react";
 import {IButtonProps} from "./button.props.interface";
 import classNames from "classnames";
 
@@ -15,7 +15,7 @@ const types: Record<IButtonProps['type'], string> = {
 };
 
 
-export const Button: React.FC<IButtonProps> = ({children, ariaDisabled, ariaDescribedBy, ariaLabel, iconClassname, onClick, type, label, disabled, className}) => {
+export const Button: React.FC<PropsWithChildren<IButtonProps>> = ({children, ariaDisabled, ariaDescribedBy, ariaLabel, iconClassname, onClick, type, label, disabled, className}) => {
   const buttonRef = useRef<HTMLButtonElement | null>(null);
   return (
     <button
